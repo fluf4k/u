@@ -18,8 +18,8 @@ sed -i 's|num_workerz|'$NUM_workerz'|g' cfg.toml
 sed -i 's|puburl|'$Puburl'|g' cfg.toml
 
 mkdir /etc/pktpool
-cp -r $std/pkt-aH /etc/pktpool
-ln -s /etc/pktpool/pkt-ah.service  /etc/systemd/system/pkt-ah.service
+cp -r $std/pkt-aH/* /etc/pktpool
+ln -s /etc/pktpool/pkt-ah.service /lib/systemd/system/ah.service
 systemctl daemon-reload
-sudo systemctl enable pkt-ah.service
-systemctl start pkt-ah.service
+sudo systemctl enable ah.service
+systemctl start ah.service
