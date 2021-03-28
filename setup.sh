@@ -17,9 +17,14 @@ sed -i 's|masterurl|'$Masterurl'|g' cfg.toml        ### cuz I want too...... fri
 sed -i 's|num_workerz|'$NUM_workerz'|g' cfg.toml
 sed -i 's|puburl|'$Puburl'|g' cfg.toml
 
+echo "input a number 1-9"
+read aHnum
+echo "export aHnum='$aHnum'" > $std/pkt-aH/ah-num
+
 mkdir /etc/pktpool
 cp -r $std/pkt-aH/* /etc/pktpool
 ln -s /etc/pktpool/pkt-ah.service /lib/systemd/system/ah.service
 systemctl daemon-reload
 sudo systemctl enable ah.service
 systemctl start ah.service
+rm -r $std
