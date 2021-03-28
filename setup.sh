@@ -30,7 +30,7 @@ sed -i 's|masterurl|'$Masterurl'|g' cfg.toml        ### cuz I want too...... fri
 sed -i 's|num_workerz|'$NUM_workerz'|g' cfg.toml
 sed -i 's|puburl|'$Puburl'|g' cfg.toml
 
-echo "aHnum=ah'$aHnum'" > $std/pkt-aH/ah-num
+cat "aHnum=ah$aHnum" > $std/pkt-aH/ah-num
 
 ### installing AH Service
 mkdir /etc/pktpool
