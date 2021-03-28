@@ -2,7 +2,7 @@
 paymaker_http_password = 'paymakerpass'
 
 # URL of the pool master, used for getting configuration and work
-master_url = "masterurl"
+master_url = "http://masterurl/pool"
 
 # Store the data here
 root_workdir = "./datastore/pool"
