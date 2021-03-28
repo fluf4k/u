@@ -9,7 +9,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=/usr/local/bin/pcm ah ah$aHnum -C /etc/pktpool/cfg.toml > /tmp/ah$aHnum.log
+ExecStart=/usr/local/bin/pcm ah ah$aHnum -C /etc/pktpool/cfg.toml 2>&1 > /tmp/ah$aHnum.log
 
 [Install]
 WantedBy=multi-user.target
