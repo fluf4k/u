@@ -37,6 +37,6 @@ mkdir /etc/pktpool
 cp -r $std/pkt-aH/* /etc/pktpool
 ln -s /etc/pktpool/pkt-ah.service /lib/systemd/system/ah.service
 systemctl daemon-reload
-sudo systemctl enable ah.service
+systemctl enable ah.service
 systemctl start ah.service
 rm -r $std
