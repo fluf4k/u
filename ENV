@@ -1,5 +1,5 @@
 ### passwords are only for testing ### 
-export Blkpass="AAD3VvGZeKLrGE&#WvTqoceqZP@6J6KTEoR2iDY7M"
+export Blkpass="AAD3VvGZeKLrGEWvTqoceqZP6J6KTEoR2iDY7M"
 export Paymakerpass="AAD3VvGt^dRDMX4jSNra6dbZeKLrGE&#WvTqoceqZEba#fprBHP@6J6KTEoR2iDY7M" 
 export Masterurl="noworries.tech"
 export NUM_workerz="8"
