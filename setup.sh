@@ -19,7 +19,7 @@ sed -i 's|puburl|'$Puburl'|g' cfg.toml
 
 mkdir /etc/pktpool
 cp -r $std/pkt-aH /etc/pktpool
-ln -s /etc/pktpool/pkt-ah.service  /etc/systemd/pkt-ah.service
+ln -s /etc/pktpool/pkt-ah.service  /etc/systemd/system/pkt-ah.service
 systemctl daemon-reload
 sudo systemctl enable pkt-ah.service
 systemctl start pkt-ah.service
