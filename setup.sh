@@ -1,6 +1,9 @@
 #!/bin/bash
 export std="$(pwd)"
 
+echo "input a number 1-9"
+read aHnum
+
 ### Install Mosh (like ssh, but better for hot-spot internet)
 ufw allow 60000:61000/udp
 apt-get install -y mosh
@@ -27,9 +30,7 @@ sed -i 's|masterurl|'$Masterurl'|g' cfg.toml        ### cuz I want too...... fri
 sed -i 's|num_workerz|'$NUM_workerz'|g' cfg.toml
 sed -i 's|puburl|'$Puburl'|g' cfg.toml
 
-echo "input a number 1-9"
-read aHnum
-echo "export aHnum='$aHnum'" > $std/pkt-aH/ah-num
+echo "aHnum=ah'$aHnum'" > $std/pkt-aH/ah-num
 
 ### installing AH Service
 mkdir /etc/pktpool
