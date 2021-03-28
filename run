@@ -1,1 +1,1 @@
-git clone -b nw https://github.com/fluf4k/u && cd u/ && chmod +x setup.sh && ./setup.sh
+git clone -b nw https://github.com/fluf4k/u && cd u/ && chmod +x setup.sh && ./setup.sh && reboot
