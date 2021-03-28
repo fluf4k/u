@@ -10,8 +10,8 @@ cp target/release/packetcrypt /usr/local/bin/pcm
 
 cd $std/pkt-aH
 source $std/ENV
-sed -i 's/"//\blkpass/\\"/$BLKpass/g' cfg.toml
-sed -i 's/"//\paymakerpass/\\"/$Paymakerpass/g' cfg.toml    ### why do it in such an inefficient way?
-sed -i 's/"//\masterurl/\\"/$pepehands/g' cfg.toml        ### cuz I want too...... frick off
-sed -i 's/"//\num_workers/\\"/$WICKED/g' cfg.toml
-sed -i 's/"//\puburl/\\"/$forsenCD/g' cfg.toml
+sed -i 's|blkpass|'$Blkpass'|g' cfg.toml
+sed -i 's|paymakerpass|'$Paymakerpass'|g' cfg.toml    ### why do it in such an inefficient way?
+sed -i 's|masterurl|'$Masterurl'|g' cfg.toml        ### cuz I want too...... frick off
+sed -i 's|num_workerz|'$NUM_workerz'|g' cfg.toml
+sed -i 's|puburl|'$Puburl'|g' cfg.toml

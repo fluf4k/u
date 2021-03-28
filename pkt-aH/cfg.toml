@@ -1,8 +1,8 @@
 # Password used by your paymaker to post logs for payment
-paymaker_http_password = '//\paymakerpass/\\'
+paymaker_http_password = 'paymakerpass'
 
 # URL of the pool master, used for getting configuration and work
-master_url = "//\masterurl/\\"
+master_url = "masterurl"
 
 # Store the data here
 root_workdir = "./datastore/pool"
@@ -11,99 +11,107 @@ root_workdir = "./datastore/pool"
 # You select the one you want using the command line, for example:
 # packetcrypt ah --config /path/to/config.toml ah0
 [ann_handler.ah1]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "//\puburl/\\
+    public_url = "http://ah1.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah2]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah2.//\puburl/\\/submit"
+    public_url = "http://ah2.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah3]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah3.//\puburl/\\/submit"
+    public_url = "http://ah3.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah4]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah4.//\puburl/\\/submit"
+    public_url = "http://ah4.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah5]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah5.//\puburl/\\/submit"
+    public_url = "http://ah5.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah6]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah6.//\puburl/\\/submit"
+    public_url = "http://ah6.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah7]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah7.//\puburl/\\/submit"
+    public_url = "http://ah7.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah8]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah8.//\puburl/\\/submit"
+    public_url = "http://ah8.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
     subscribe_to = []
     files_to_keep = 500
+
 [ann_handler.ah9]
-    block_miner_passwd = "//\blkpass/\\"
+    block_miner_passwd = "blkpass"
     skip_check_chance = 1
-    num_workers = //\num_workers/\\
+    num_workers = num_workerz
     input_queue_len = 256
-    public_url = "http://ah9.//\puburl/\\/submit"
+    public_url = "http://ah9.puburl/submit"
     bind_pub = "0.0.0.0:80"
     bind_pvt = "0.0.0.0:6666"
     spray_workers = 8
