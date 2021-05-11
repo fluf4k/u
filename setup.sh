@@ -1,13 +1,5 @@
 #!/bin/bash
 export std="$(pwd)"
-ufw allow 60000:61000/udp
-apt-get install -y mosh
-rm -r /usr/local/bin/pcm /root/packetcrypt_rs
-git clone -b develop https://github.com/cjdelisle/packetcrypt_rs.git
-cd packetcrypt_rs
-cargo build --release
-cp target/release/packetcrypt /usr/local/bin/pcm
-
 cd $std/pkt-aH
 source $std/ENV
 sed -i 's|blkpass|'$Blkpass'|g' cfg.toml
